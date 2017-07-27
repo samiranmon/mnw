@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Brainium_Sizechart>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Brainium_Sizechart>
+    </modules>
+</config>

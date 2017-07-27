@@ -1,0 +1,140 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+
+ 
+
+<!--open dives-->
+
+<!--open dives-->
+<div class="overlay"></div>
+<header id="header" class="page-header">
+    
+    
+    
+        <div class="container-fluid">
+           <div class="row">
+           
+            <div class="col-sm-4 col-xs-4">
+            <div class="shop"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> SHOP</div>
+            
+            <div class="browse">
+            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> BROWSE
+<!--
+            <div class="browse_open">
+                <ul>
+                    <li>LOCATE ZIVAME STUDIOS <span>Book an appointment for your perfect fit</span></li>
+                    <li>Follow MY Curves <span>Book an appointment for your perfect fit</span></li>
+                    <li>About Me <span>Book an appointment for your perfect fit</span></li>
+                    <li>Careers <span>Book an appointment for your perfect fit</span></li>
+                </ul>
+            </div>
+-->         
+            </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+            <div class="logo_div"><a href="<?php echo $this->getBaseUrl(); ?>"><img src="<?php echo $this->getSkinUrl('images/logo.png'); ?>"/></a></div>
+            </div>
+            
+            <div class="col-sm-4 col-xs-4">
+                <div class="notification_section">
+                    <ul>
+                        <li id="phone"><a href="javascript:void(0)"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+                        <div class="phone_details">
+                            <ul>
+                                <li><a href="<?php echo $this->getUrl('contacts'); ?>">SEND US A MESSAGE<span>Share your query with our team</span></a></li>
+                                <li><a href="javascript:void(0)">
+                                        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('call_us')->toHtml() ?>
+                                        <span>Call us now</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                        
+<!--                        <li><a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>-->
+                        
+                        <?php 
+                            if(!Mage::getSingleton('customer/session')->isLoggedIn()){ ?>
+                               <li id="login"><a href="javascript:void(0)"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li> 
+                        <?php }else{
+                                $customer = Mage::getSingleton('customer/session')->getCustomer();
+                                /* $customer->getPrefix();
+                                $customer->getName(); // Full Name
+                                $customer->getFirstname(); // First Name
+                                $customer->getMiddlename(); // Middle Name
+                                $customer->getLastname(); // Last Name
+                                $customer->getSuffix(); */
+                            ?>
+                                <li id="after_login"><a href="javascript:void(0)"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                                    <div class="after_login_details">
+                                        <ul>
+                                            <li><a href="<?php echo $this->getUrl('customer/account/'); ?>"><?php echo $customer->getName(); ?></a></li>
+                                            <li><a href="<?php echo $this->getUrl('customer/account/'); ?>">Account</a></li>
+                                            <li><a href="<?php echo $this->getUrl('customer/account/logout/'); ?>">Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                        <?php } ?>
+                        <li id="notification"><a href="javascript:void(0)"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+                        <li id="cart"><a href="javascript:void(0)"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+<?php echo $this->getChildHtml('topContainer'); ?>
+
+<?php
+/* $setup = new Mage_Eav_Model_Entity_Setup('core_setup');
+
+
+$setup->removeAttribute('catalog_category', 'hellow');
+
+
+$setup->addAttribute('catalog_category', 'size_chart',  array(
+'group'        => 'General Information',
+'type'     => 'varchar',
+'label'    => 'Size Chart',
+'input'    => 'image',
+'source'   => 'eav/entity_attribute_source_boolean',
+'global'        => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL,
+'required' => false,
+'backend' => 'catalog/category_attribute_backend_image',
+'frontend_input' =>'',
+'default'  => 1,
+'visible'       => 1,
+'user_defined'  => 1,
+)); */
+
+ 
+?>

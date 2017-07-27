@@ -1,0 +1,998 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+
+<!--
+<div class="header-language-background">
+    <div class="header-language-container">
+        <div class="store-language-container">
+            <?php// echo $this->getChildHtml('store_language') ?>
+        </div>
+
+        <?php //echo $this->getChildHtml('currency_switcher') ?>
+
+        <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getChildHtml('accountLinks') ?></p>
+    </div>
+</div>
+-->
+
+
+<!--open dives-->
+<div class="menu_box_open">
+              <div class="menu_main_section">
+               <div class="side_header">
+                   <div class="side_header_left">
+                       <span class="glyphicon glyphicon-list" aria-hidden="true"></span> SHOP
+                   </div>
+                   <div class="side_header_right">
+                      <a href="#">Home</a>
+                       <div class="cross"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+               <div class="content_scroll">
+               <div class="search_menu">
+                   <input type="text" placeholder="SEARCH FOR LINGERIE, ACTIVEWEAR & APPAREL">
+                   <button type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+               </div>
+               <div class="menu_section">
+                   <ul>
+                       <li><a href="#" class="active">Brands</a>
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Brands </p>
+                   </div>
+                   <div class="side_header_right">
+                     
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="menu_brands">
+                               <div class="brands_logos">
+                                <h3>our brands</h3>
+                                <p>Styles designed in-house for your perfect fit</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/zivame.png'); ?>"/></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/zivame.png'); ?>"/></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/zivame.png'); ?>"/></a>
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="brands_logos">
+                                <h3>partner brands</h3>
+                                <p>Curated styles handpicked by our designers</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/zivame.png'); ?>"/></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/zivame.png'); ?>"/></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/zivame.png'); ?>"/></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                       <li><a href="#">Swimwear</a>
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Swimwear </p>
+                   </div>
+                   <div class="side_header_right">
+                       <a href="#">See All</a>
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="category_details">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="catagory_listing">
+                                            <div class="see_all_pro">
+                                                <a href="#">See All SWIMWEAR <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div class="catagory_listing_des">
+                                                <h4>by style</h4>
+                                                <ul>
+                                                    <li><a href="#">slips & camis</a></li>
+                                                    <li><a href="#">cover ups</a></li>
+                                                    <li><a href="#">onesies</a></li>
+                                                    <li><a href="#">sleep bottom</a></li>
+                                                    <li><a href="#">long nightdress</a></li>
+                                                    <li><a href="#">short nightdress</a></li>
+                                                    <li><a href="#">chemise</a></li>
+                                                    <li><a href="#">babydolls</a></li>
+                                                </ul>
+                                            </div>
+                                           
+                                            
+                                            <div class="catagory_listing_des">
+                                                <h4>by sets</h4>
+                                                <ul>
+                                                    <li><a href="#">shorts sets</a></li>
+                                                    <li><a href="#">capri sets</a></li>
+                                                    <li><a href="#">pyjama sets</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                            
+                                             <div class="catagory_listing_des">
+                                                <h4>by collections</h4>
+                                                <ul>
+                                                    <li><a href="#">teenage</a></li>
+                                                    <li><a href="#">maternity / nursing</a></li>
+                                                    <li><a href="#">curvy</a></li>
+                                                    <li><a href="#">very sexy</a></li>
+                                                    <li><a href="#">bridal</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="category_add_img">
+                                            <a href="#"><img src="<?php echo $this->getSkinUrl('images/add_c.jpg'); ?>"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                       <li><a href="#">Innerwear</a>
+                       
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Innerwear </p>
+                   </div>
+                   <div class="side_header_right">
+                       <a href="#">See All</a>
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="category_details">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="catagory_listing">
+                                            <div class="see_all_pro">
+                                                <a href="#">See All Innerwear <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div class="catagory_listing_des">
+                                                <h4>by style</h4>
+                                                <ul>
+                                                    <li><a href="#">slips & camis</a></li>
+                                                    <li><a href="#">cover ups</a></li>
+                                                    <li><a href="#">onesies</a></li>
+                                                    <li><a href="#">sleep bottom</a></li>
+                                                    <li><a href="#">long nightdress</a></li>
+                                                    <li><a href="#">short nightdress</a></li>
+                                                    <li><a href="#">chemise</a></li>
+                                                    <li><a href="#">babydolls</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="catagory_listing_des">
+                                                <h4>by sets</h4>
+                                                <ul>
+                                                    <li><a href="#">shorts sets</a></li>
+                                                    <li><a href="#">capri sets</a></li>
+                                                    <li><a href="#">pyjama sets</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                            
+                                             <div class="catagory_listing_des">
+                                                <h4>by collections</h4>
+                                                <ul>
+                                                    <li><a href="#">teenage</a></li>
+                                                    <li><a href="#">maternity / nursing</a></li>
+                                                    <li><a href="#">curvy</a></li>
+                                                    <li><a href="#">very sexy</a></li>
+                                                    <li><a href="#">bridal</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="category_add_img">
+                                            <a href="#"><img src="<?php echo $this->getSkinUrl('images/add_c.jpg'); ?>"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                       <li><a href="#">Kids Innerwear</a>
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Kids Innerwear </p>
+                   </div>
+                   <div class="side_header_right">
+                       <a href="#">See All</a>
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="category_details">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="catagory_listing">
+                                            <div class="see_all_pro">
+                                                <a href="#">See All Kids Innerwear <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div class="catagory_listing_des">
+                                                <h4>by style</h4>
+                                                <ul>
+                                                    <li><a href="#">slips & camis</a></li>
+                                                    <li><a href="#">cover ups</a></li>
+                                                    <li><a href="#">onesies</a></li>
+                                                    <li><a href="#">sleep bottom</a></li>
+                                                    <li><a href="#">long nightdress</a></li>
+                                                    <li><a href="#">short nightdress</a></li>
+                                                    <li><a href="#">chemise</a></li>
+                                                    <li><a href="#">babydolls</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="catagory_listing_des">
+                                                <h4>by sets</h4>
+                                                <ul>
+                                                    <li><a href="#">shorts sets</a></li>
+                                                    <li><a href="#">capri sets</a></li>
+                                                    <li><a href="#">pyjama sets</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                            
+                                             <div class="catagory_listing_des">
+                                                <h4>by collections</h4>
+                                                <ul>
+                                                    <li><a href="#">teenage</a></li>
+                                                    <li><a href="#">maternity / nursing</a></li>
+                                                    <li><a href="#">curvy</a></li>
+                                                    <li><a href="#">very sexy</a></li>
+                                                    <li><a href="#">bridal</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="category_add_img">
+                                            <a href="#"><img src="<?php echo $this->getSkinUrl('images/add_c.jpg'); ?>"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                       <li><a href="#">Thermals </a>
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Thermals </p>
+                   </div>
+                   <div class="side_header_right">
+                       <a href="#">See All</a>
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="category_details">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="catagory_listing">
+                                            <div class="see_all_pro">
+                                                <a href="#">See All Thermals <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div class="catagory_listing_des">
+                                                <h4>by style</h4>
+                                                <ul>
+                                                    <li><a href="#">slips & camis</a></li>
+                                                    <li><a href="#">cover ups</a></li>
+                                                    <li><a href="#">onesies</a></li>
+                                                    <li><a href="#">sleep bottom</a></li>
+                                                    <li><a href="#">long nightdress</a></li>
+                                                    <li><a href="#">short nightdress</a></li>
+                                                    <li><a href="#">chemise</a></li>
+                                                    <li><a href="#">babydolls</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="catagory_listing_des">
+                                                <h4>by sets</h4>
+                                                <ul>
+                                                    <li><a href="#">shorts sets</a></li>
+                                                    <li><a href="#">capri sets</a></li>
+                                                    <li><a href="#">pyjama sets</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                            
+                                             <div class="catagory_listing_des">
+                                                <h4>by collections</h4>
+                                                <ul>
+                                                    <li><a href="#">teenage</a></li>
+                                                    <li><a href="#">maternity / nursing</a></li>
+                                                    <li><a href="#">curvy</a></li>
+                                                    <li><a href="#">very sexy</a></li>
+                                                    <li><a href="#">bridal</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="category_add_img">
+                                            <a href="#"><img src="<?php echo $this->getSkinUrl('images/add_c.jpg'); ?>"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                       <li><a href="#">Nightwear</a>
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Nightwear </p>
+                   </div>
+                   <div class="side_header_right">
+                       <a href="#">See All</a>
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="category_details">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="catagory_listing">
+                                            <div class="see_all_pro">
+                                                <a href="#">See All Nightwear <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div class="catagory_listing_des">
+                                                <h4>by style</h4>
+                                                <ul>
+                                                    <li><a href="#">slips & camis</a></li>
+                                                    <li><a href="#">cover ups</a></li>
+                                                    <li><a href="#">onesies</a></li>
+                                                    <li><a href="#">sleep bottom</a></li>
+                                                    <li><a href="#">long nightdress</a></li>
+                                                    <li><a href="#">short nightdress</a></li>
+                                                    <li><a href="#">chemise</a></li>
+                                                    <li><a href="#">babydolls</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="catagory_listing_des">
+                                                <h4>by sets</h4>
+                                                <ul>
+                                                    <li><a href="#">shorts sets</a></li>
+                                                    <li><a href="#">capri sets</a></li>
+                                                    <li><a href="#">pyjama sets</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                            
+                                             <div class="catagory_listing_des">
+                                                <h4>by collections</h4>
+                                                <ul>
+                                                    <li><a href="#">teenage</a></li>
+                                                    <li><a href="#">maternity / nursing</a></li>
+                                                    <li><a href="#">curvy</a></li>
+                                                    <li><a href="#">very sexy</a></li>
+                                                    <li><a href="#">bridal</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="category_add_img">
+                                            <a href="#"><img src="<?php echo $this->getSkinUrl('images/add_c.jpg'); ?>"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                       <li><a href="#">Shapewear</a>
+                       <div class="brand_des">
+                         <div class="brand_description">
+                             <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Shapewear </p>
+                   </div>
+                   <div class="side_header_right">
+                       <a href="#">See All</a>
+                       <div class="cross_new"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+                        <div class="main_des_section">
+                            <div class="category_details">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="catagory_listing">
+                                            <div class="see_all_pro">
+                                                <a href="#">See All Shapewear <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                                            </div>
+                                            <div class="catagory_listing_des">
+                                                <h4>by style</h4>
+                                                <ul>
+                                                    <li><a href="#">slips & camis</a></li>
+                                                    <li><a href="#">cover ups</a></li>
+                                                    <li><a href="#">onesies</a></li>
+                                                    <li><a href="#">sleep bottom</a></li>
+                                                    <li><a href="#">long nightdress</a></li>
+                                                    <li><a href="#">short nightdress</a></li>
+                                                    <li><a href="#">chemise</a></li>
+                                                    <li><a href="#">babydolls</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="catagory_listing_des">
+                                                <h4>by sets</h4>
+                                                <ul>
+                                                    <li><a href="#">shorts sets</a></li>
+                                                    <li><a href="#">capri sets</a></li>
+                                                    <li><a href="#">pyjama sets</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                            
+                                             <div class="catagory_listing_des">
+                                                <h4>by collections</h4>
+                                                <ul>
+                                                    <li><a href="#">teenage</a></li>
+                                                    <li><a href="#">maternity / nursing</a></li>
+                                                    <li><a href="#">curvy</a></li>
+                                                    <li><a href="#">very sexy</a></li>
+                                                    <li><a href="#">bridal</a></li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="category_add_img">
+                                            <a href="#"><img src="<?php echo $this->getSkinUrl('images/add_c.jpg'); ?>"/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                             
+                       </div>
+                       </li>
+                      
+                       
+                   </ul>
+               </div>
+               </div>
+               </div> 
+            </div>
+<div class="login_box_open">
+              <div class="menu_main_section">
+               <div class="side_header">
+                   <div class="side_header_left">
+                       <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Login to Account
+                   </div>
+                   <div class="side_header_right">
+                     
+                       <div class="cross_login"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+               <div class="content_scroll">
+                  <div class="login_section">
+                      <div class="new_account">
+                          <h4>New To Zivame?</h4>
+                          <button type="submit" id="register">Register</button>
+                          
+                          
+                      </div>
+                      <div class="have_account">
+                          <h4>Already Have an account?</h4>
+                          <p>Use your social media account:</p>
+                          <div class="col-sm-6">
+                              <a href="#" class="facebook">facebook</a>
+                          </div>
+                          <div class="col-sm-6">
+                              <a href="#" class="google_plus">Google</a>
+                          </div>
+                      </div>
+                      <div class="or_section_main">
+                      <div class="or_section">
+                          OR
+                      </div>
+                      </div>
+                      <div class="login_form">
+                          <label>email address</label>
+                          <input type="text" placeholder="Your Email">
+                          <label>password</label>
+                          <input type="password" placeholder="Your Password">
+                          <div class="forgot_pass">
+                              <a href="#">Forgot Password ?</a>
+                              <button type="submit">Sign in</button>
+                          </div>
+                      </div>
+                      
+                      
+                  </div>
+<!--
+                  <div class="trac_support">
+                          <ul>
+                              <li><a href="#">Track order</a></li>
+                              <li><a href="#">Support</a></li>
+                          </ul>
+                      </div>
+-->
+                  <div class="register_box_open">
+              <div class="menu_main_section">
+               <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a_register"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Register </p>
+                   </div>
+                   <div class="side_header_right">
+                     
+                       <div class="cross_register"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+               <div class="content_scroll">
+                  <div class="registration_section">
+                  
+                      <div class="have_account">
+                          <p>Use your social media account.<br>
+
+We promise we won't post anything on your behalf.</p>
+                          <div class="col-sm-6">
+                              <a href="#" class="facebook">facebook</a>
+                          </div>
+                          <div class="col-sm-6">
+                              <a href="#" class="google_plus">Google</a>
+                          </div>
+                      </div>
+                      <div class="or_section_main">
+                      <div class="or_section">
+                          OR
+                      </div>
+                      </div>
+                      <div class="registration_form">
+                         <p>Quick register using the form below</p>
+                         <div class="row">
+                         <div class="col-xs-6">
+                         <label>First Name</label>
+                          <input type="text" placeholder="Your First Name">
+                          </div>
+                          <div class="col-xs-6">
+                          <label>Last Name</label>
+                          <input type="text" placeholder="Your Last Name">
+                             </div>
+                          </div>
+                          <label>email address</label>
+                          <input type="text" placeholder="Your Email">
+                          <label>password</label>
+                          <input type="password" placeholder="Your Password">
+                          <p class="all_field">* All fields are required.</p>
+                          <div class="accout_b">
+                             
+                              <button type="submit">Create my Acoount</button>
+                              <p class="terms">
+By creating account, you agree to our
+                                  <a href="#">Terms of Service</a></p>
+                          </div>
+                      </div>
+                      
+                      
+                  </div>
+               
+               </div>
+               </div> 
+            </div>
+               </div>
+               </div> 
+            </div>
+<div class="notification_box_open">
+              <div class="menu_main_section">
+               <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a_notification"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> NOTIFICATIONS </p>
+                   </div>
+                   <div class="side_header_right">
+                     
+                       <div class="cross_notification"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+               <div class="content_scroll">
+                 <div class="notification_section_right">
+                     <div class="notification_section_top">
+                         <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                         <h3>We're on snooze here! </h3>
+                         <p>We don't have anything new for you. Continue shopping to get personalized messages. </p>
+                     </div>
+                     <div class="notification_section_pro">
+                         <h3>Start exploring here </h3>
+                         <ul>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+               
+               </div>
+               </div> 
+            </div>
+<div class="cart_box_open">
+              <div class="menu_main_section">
+               <div class="side_header">
+                   <div class="side_header_left">
+                       <div class="left_a_cart"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><p> Cart </p>
+                   </div>
+                   <div class="side_header_right">
+                     
+                       <div class="cross_cart"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                   </div>
+               </div>
+               <div class="content_scroll">
+                 <div class="notification_section_right">
+                     <div class="notification_section_top">
+                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                         <h3>Psst…Your cart looks sexiest when it is full! </h3>
+                         <p>We could not find any product added to your cart. Strap on to our best styles now!</p>
+                     </div>
+                     <div class="notification_section_pro">
+                         <h3>You might like</h3>
+                         <ul>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                             <li><a href="#">
+                                <div class="pro_bx">
+                                 <img src="<?php echo $this->getSkinUrl('images/notification.jpg'); ?>"/>
+                                 <p class="price_pro">Rs. 179</p>
+                                </div>
+                                </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+               
+               </div>
+               </div> 
+            </div>
+<!--open dives-->
+<div class="overlay"></div>
+<header id="header" class="page-header">
+    <!--<div class="page-header-container">
+        <a class="logo" href="<?php echo $this->getUrl('') ?>">
+            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
+            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
+        </a>
+
+        <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
+              // See app.js for details ?>
+        <div class="store-language-container"></div>
+
+        <!-- Skip Links -->
+  <!--
+        <div class="skip-links">
+            <a href="#header-nav" class="skip-link skip-nav">
+                <span class="icon"></span>
+                <span class="label"><?php echo $this->__('Menu'); ?></span>
+            </a>
+
+            <a href="#header-search" class="skip-link skip-search">
+                <span class="icon"></span>
+                <span class="label"><?php echo $this->__('Search'); ?></span>
+            </a>
+
+            <div class="account-cart-wrapper">
+                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
+                    <span class="icon"></span>
+                    <span class="label"><?php echo $this->__('Account'); ?></span>
+                </a>
+
+                <!-- Cart -->
+  <!--
+                <div class="header-minicart">
+                    <?php echo $this->getChildHtml('minicart_head'); ?>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Navigation -->
+  <!--
+        <div id="header-nav" class="skip-content">
+            <?php echo $this->getChildHtml('topMenu') ?>
+        </div>
+
+        <!-- Search -->
+  <!--
+        <div id="header-search" class="skip-content">
+            <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+  <!--
+        <!-- Account -->
+  <!--
+        <div id="header-account" class="skip-content">
+            <?php echo $this->getChildHtml('topLinks') ?>
+        </div>
+    </div>-->
+    
+    
+        <div class="container-fluid">
+           <div class="row">
+            <div class="col-sm-4">
+            <div class="shop"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> SHOP</div>
+            
+            <div class="browse">
+            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> BROWSE
+<!--
+            <div class="browse_open">
+                <ul>
+                    <li>LOCATE ZIVAME STUDIOS <span>Book an appointment for your perfect fit</span></li>
+                    <li>Follow MY Curves <span>Book an appointment for your perfect fit</span></li>
+                    <li>About Me <span>Book an appointment for your perfect fit</span></li>
+                    <li>Careers <span>Book an appointment for your perfect fit</span></li>
+                </ul>
+            </div>
+-->
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <div class="logo_div"><a href="#"><img src="<?php echo $this->getSkinUrl('images/logo.png'); ?>"/></a></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="notification_section">
+                    <ul>
+                        <li id="phone"><a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+                        <div class="phone_details">
+                            <ul>
+                                <li><a href="#">SEND US A MESSAGE<span>Share your query with our team</span></a></li>
+                                <li><a href="#">080-4922-1777<span>Call us now</span></a></li>
+                           
+                            </ul>
+                        </div>
+                        </li>
+                        
+<!--                        <li><a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>-->
+                        <li id="login"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                        
+                        <li id="notification"><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+                        
+                        
+                        
+                        <li id="cart"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+
+
+<?php echo $this->getChildHtml('topContainer'); ?>

@@ -1,0 +1,10 @@
+a:5:{i:0;s:78:"The PDO extension is required for this adapter but the extension is not loaded";i:1;s:1104:"#0 /home2/rajiv/public_html/mnw/lib/Zend/Db/Adapter/Abstract.php(248): Zend_Db_Adapter_Pdo_Abstract->setFetchMode(2)
+#1 /home2/rajiv/public_html/mnw/app/code/core/Mage/Core/Model/Resource.php(175): Zend_Db_Adapter_Abstract->__construct(Array)
+#2 /home2/rajiv/public_html/mnw/app/code/core/Mage/Core/Model/Resource.php(110): Mage_Core_Model_Resource->_newConnection('pdo_mysql', Object(Mage_Core_Model_Config_Element))
+#3 /home2/rajiv/public_html/mnw/app/code/core/Mage/Core/Model/Resource/Setup.php(141): Mage_Core_Model_Resource->getConnection('core_setup')
+#4 /home2/rajiv/public_html/mnw/app/code/core/Mage/Core/Model/Resource/Setup.php(234): Mage_Core_Model_Resource_Setup->__construct('core_setup')
+#5 /home2/rajiv/public_html/mnw/app/code/core/Mage/Core/Model/App.php(428): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#6 /home2/rajiv/public_html/mnw/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Model_App->_initModules()
+#7 /home2/rajiv/public_html/mnw/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#8 /home2/rajiv/public_html/mnw/index.php(83): Mage::run('', 'store')
+#9 {main}";s:3:"url";s:12:"/~rajiv/mnw/";s:11:"script_name";s:21:"/~rajiv/mnw/index.php";s:4:"skin";s:7:"default";}

@@ -1,0 +1,493 @@
+<script type="text/javascript">
+    jQuery(document).ready(function(){ 
+              //jQuery('#myModal').modal('show');
+	});
+</script>
+
+<div class="welcome_popup">
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+
+
+                <div class="modal-body">
+                    <div class="pop_main">
+                        <h3>Welcome to Unisex Brands Hub</h3>
+                        <a href="#"><img src="<?php echo $this->getSkinUrl('images/blog1.jpg'); ?>"/></a>
+                        <div class="newsletter">
+                            <h2>Newsletter</h2>
+
+                            <input type="text" placeholder="Your Email Id">
+
+                            <input type="button" value="Subscribe">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="banner_section">
+    <?php echo $this->getLayout()->createBlock('imageslider/imageslider')->setTemplate('imageslider/imageslider.phtml')->toHtml(); ?>
+</div>
+
+
+<div class="say_hello">
+    <div class="container-fluid">
+        <h2><span>Welcome to</span> Unisex Brands Hub</h2>
+        <p>A curated collection of your favourites - Zivame, Lovable, Triumph & more.</p>
+
+        <div class="see_all_p"><a href="#">SEE MORE</a></div>
+        <div class="see_all_brand">
+            <ul>
+                <?php
+                $store_collection = Mage::getModel('store/store')->getCollection();
+                $store_collection->addFieldToFilter('status','1');
+                if(!empty($store_collection)) {
+                foreach ($store_collection as $item){
+                ?>
+                    <li>
+                        <a href="<?php echo $item->getUrl(); ?>">
+                            <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "store/" . $item->getImage(); ?>" />
+                        </a>
+                    </li>
+                <?php } } ?>
+            </ul>
+        </div>
+        
+        
+        <div class="say_hello_image_blog">
+                    
+            
+            <div class="first_img_blog">
+                
+                <div class="first_img_blog_left">
+                    <div class="first_img_blog_left_img_pad">
+                        <div class="first_img_blog_left_img_pad_main">
+                            <?php
+                                $collection = Mage::getModel('banner/banner')->load(1);
+                                if(!empty($collection)) {
+                            ?>
+                            <a href="<?php echo $collection->getUrl(); ?>">
+                                <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "banner/" . $collection->getImage(); ?>" alt="<?php echo $collection->getTitle(); ?>" />
+                            </a>
+                            <div class="absolute_img">
+                                <h4><?php echo $collection->getTitle();?></h4>
+                                <?php echo $collection->getDescription();?>
+                            </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="first_img_blog_left">
+                    
+                    <?php
+                    $collection = Mage::getModel('banner/banner')->getCollection();
+                    $collection->addFieldToFilter('status','1');
+                    $collection->addFieldToFilter('banner_id', array('in' => [2,3]));
+                foreach ($collection as $item):
+                ?>
+                    
+                    <div class="first_img_blog_left_one">
+                        <div class="first_img_blog_left_img_pad">
+                            <div class="first_img_blog_left_img_pad_main">
+                                <a href="<?php echo $item->getUrl(); ?>">
+                                    <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "banner/" . $item->getImage(); ?>" alt="<?php echo $item->getTitle(); ?>" />
+                                </a>
+                                <div class="absolute_img">
+                                    <h4><?php echo $item->getTitle();?></h4>
+                                    <?php echo $item->getDescription();?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+                    
+                     
+                </div>
+            </div>
+            
+            
+            <div class="first_img_blog">
+                
+                <div class="first_img_blog_left">
+                     <?php
+                    $collection = Mage::getModel('banner/banner')->getCollection();
+                    $collection->addFieldToFilter('status','1');
+                    $collection->addFieldToFilter('banner_id', array('in' => [4,5]));
+                    foreach ($collection as $item):
+                    ?>
+
+                        <div class="first_img_blog_left_one">
+                            <div class="first_img_blog_left_img_pad">
+                                <div class="first_img_blog_left_img_pad_main">
+                                    <a href="<?php echo $item->getUrl(); ?>">
+                                        <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "banner/" . $item->getImage(); ?>" alt="<?php echo $item->getTitle(); ?>" />
+                                    </a>
+                                    <div class="absolute_img">
+                                        <h4><?php echo $item->getTitle();?></h4>
+                                        <?php echo $item->getDescription();?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="first_img_blog_left">
+                    <div class="first_img_blog_left_img_pad">
+                        <div class="first_img_blog_left_img_pad_main">
+                            
+                             <?php
+                                $collection = Mage::getModel('banner/banner')->load(6);
+                                if(!empty($collection)) {
+                            ?>
+                            <a href="<?php echo $collection->getUrl(); ?>">
+                                <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . "banner/" . $collection->getImage(); ?>" alt="<?php echo $collection->getTitle(); ?>" />
+                            </a>
+                            <div class="absolute_img">
+                                <h4><?php echo $collection->getTitle();?></h4>
+                                <?php echo $collection->getDescription();?>
+                            </div>
+                            <?php } ?>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+<div class="follow_my_curves">
+    <div class="container-fluid">
+        <h2><span>Wide collection of</span> your Favourite Brands</h2>
+        <p>Discover our latest style stories, fit secrets and conversations from our community</p>
+    </div>
+    <div class="follow_my_curve_slider">
+        <div class="customNavigation">
+            <a class="btn prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+            <a class="btn next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+        </div>
+        <div id="owl-demo" class="owl-carousel">
+            <?php
+                //$_productCollection=$this->getLoadedProductCollection();
+                 $products = Mage::getModel('catalog/category')->load(201)
+                     ->getProductCollection()
+                     ->addAttributeToSelect('*') // add all attributes - optional
+                     ->addAttributeToFilter('status', 1) // enabled
+                     ->addAttributeToFilter('visibility', 4) //visibility in catalog,search
+                     ->setOrder('price', 'ASC'); //sets the order by price 
+                 // $_helper = $this->helper('catalog/output');
+                
+                if(!empty($products)) {
+                foreach ($products as $_product) { 
+                    
+            ?>
+                <div class="item">
+                    <div class="product_box">
+                        <a href="<?php echo $_product->getProductUrl() ?>">
+                            <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(520,350); ?>" alt="<?php echo $_product->getName(); ?>" />
+                        </a>
+
+                        <h3><?php echo $_product->getName(); ?></h3>
+                        <p><?php echo $_product->getShortDescription();?></p>
+                        <a href="<?php echo $_product->getProductUrl() ?>">READ MORE</a>
+                    </div>
+                </div>
+            <?php } } ?>
+ 
+        </div>
+    </div>
+</div>
+
+<div class="pink_bar">
+    <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="carousel_caption">
+                    The Ultimate Bridal Lingerie Checklist The Ultimate 
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel_caption">
+                    The Ultimate Bridal Lingerie Checklist The Ultimate 2
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</div>
+<div class="summer_mood" >
+    <div class="container-fluid">
+        <h2><span>Fits for</span> Every Moods</h2>
+        <p>Chic, colourful cotton bras made for everyday wear</p>
+        
+        <?php
+            $_category  = Mage::getModel('catalog/category')->load(202);
+            $_imgHtml   = '';
+            if ($_imgUrl = $_category->getImageUrl()) {
+                $_imgHtml = $_category->getImageUrl();
+            }
+        ?>
+        
+        
+        <div class="summer_box" style="background: #fff url(<?php echo $_imgHtml ?>) no-repeat center bottom;">
+            <div class="row">
+                
+                <?php
+                //$_productCollection=$this->getLoadedProductCollection();
+                 $products = Mage::getModel('catalog/category')->load(202)
+                     ->getProductCollection()
+                     ->addAttributeToSelect('*') // add all attributes - optional
+                     ->addAttributeToFilter('status', 1) // enabled
+                     ->addAttributeToFilter('visibility', 4) //visibility in catalog,search
+                     ->setOrder('price', 'ASC'); //sets the order by price 
+                 // $_helper = $this->helper('catalog/output');
+                
+                if(!empty($products)) {
+                    $iClass = 1;
+                foreach ($products as $_product) { 
+                    
+            ?>
+                
+                <div class="col-sm-4 <?php echo $iClass%2 !=0? '': 'col-sm-offset-4'; ?>">
+                    <div class="pro_img_text <?php echo $iClass%2 !=0? '': 'right-image'; ?>">
+                        <div class="pro_text">
+                            <p><?php echo $_product->getName().' '.$_product->getShortDescription(); ?></p>
+                            <span>
+                                <?php  
+                                    $_product1 = Mage::getModel('catalog/product')->load($_product->getId());
+                                    $productBlock = $this->getLayout()->createBlock('catalog/product_price');
+                                    echo $productBlock->getPriceHtml($_product1);
+                                ?>
+                            </span>
+                        </div>
+                        <div class="pro_img">
+                            <a href="<?php echo $_product->getProductUrl() ?>">
+                                <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(520,350); ?>" alt="<?php echo $_product->getName(); ?>" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+            <?php $iClass++; } } ?>
+                
+                
+                
+<!--                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="pro_img_text">
+                        <div class="pro_text">
+                            <p>Zivame Padded Under Wired Push Up Bra- Coral</p>
+                            <span>Rs. 745</span>
+                        </div>
+                        <div class="pro_img">
+                            <img src="<?//php echo $this->getSkinUrl('images/product1.jpg'); ?>"/>
+                        </div>
+                    </div>
+                </div>-->
+
+            </div>
+        </div>
+        
+        
+        <div class="shop_collect">
+            <a href="#">Shop collection</a>
+        </div>
+    </div>
+</div>
+
+<div class="fit_for_all">
+    <div class="container-fluid">
+        <h2><span>Be The First To See Our TV Ad!</span> FitForAll</h2>
+        <p>Through this campaign, we celebrate women and how proudly they accept their bodies. Real and relatable women with different kinds of bodies, come together to showcase how Zivame is #FitForAll. Take a look below!</p>
+        <div class="video_play">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tv_ad')->toHtml();?>
+            
+            <!--<img src="<?php //echo $this->getSkinUrl('images/video.jpg'); ?>"/>-->
+             
+<!--            <div class="video_play_b">
+                <a href="#"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
+            </div>
+            <div class="watch_video_b">
+                <a href="#">WATCH VIDEO</a>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<div class="pink_bar">
+    <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="carousel_caption">
+                    The Ultimate Bridal Lingerie Checklist The Ultimate 
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel_caption">
+                    The Ultimate Bridal Lingerie Checklist The Ultimate 2
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</div>
+
+
+
+
+    
+
+<div class="trading_product">
+    <div class="container-fluid">
+        <h2><span>Shop Our Latest</span> Trending Products</h2>
+        <div class="trading_product_slider">
+            
+            <div class="customNavigation">
+                <a class="btn prev2"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                <a class="btn next2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></span></a>
+            </div>
+            
+            <div id="owl-demo2" class="owl-carousel">
+                
+            <?php
+
+     //$_productCollection=$this->getLoadedProductCollection();
+    
+                 $products = Mage::getModel('catalog/category')->load(200)
+                     ->getProductCollection()
+                     ->addAttributeToSelect('*') // add all attributes - optional
+                     ->addAttributeToFilter('status', 1) // enabled
+                     ->addAttributeToFilter('visibility', 4) //visibility in catalog,search
+                     ->setOrder('price', 'ASC'); //sets the order by price 
+                 // $_helper = $this->helper('catalog/output');
+                
+                if(!empty($products)) {
+                foreach ($products as $_product) { 
+                    
+            ?>
+                <div class="item">
+                    <div class="trading_product_box">
+                        
+                        <a href="<?php echo $_product->getProductUrl() ?>">
+                            <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200,300); ?>" alt="<?php echo $_product->getName(); ?>" />
+                        </a>
+                        
+                        <div class="trading_product_box_text">
+                            <p><?php echo $_product->getShortDescription();?></p>
+                            <?php  
+                                $_product1 = Mage::getModel('catalog/product')->load($_product->getId());
+                              $productBlock = $this->getLayout()->createBlock('catalog/product_price');
+                              echo $productBlock->getPriceHtml($_product1);
+                            ?>
+                            <div class="cart_wish">
+                                
+                                <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                                    <a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="wish_i">
+                                        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+                                    </a>
+                                <?php endif; ?>
+                                
+                                
+                                <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
+                                    <button type="button" title="<?php echo $this->quoteEscape($this->__('Add to Cart')) ?>" class="cart_i" onclick="setLocation('<?php echo $this->helper('checkout/cart')->getAddUrl($_product1) ?>')">
+                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                    </button>
+                                <?php endif; ?>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            <?php } } ?>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="latest_scoop">
+    <div class="container">
+        <h2><span>Check Out Our</span> Latest Scoop</h2>
+        <p>What's new, our stores, customer speak and announcements</p>
+        <div class="latest_scoop_slider">
+            <div class="customNavigation">
+                <a class="btn prev3"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                <a class="btn next3"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></span></a>
+            </div>
+            <div id="owl-demo3" class="owl-carousel">
+                <?php echo $this->getLayout()->createBlock('testimonialmanager/testimonials')->setTemplate('testimonialmanager/testimonials.phtml')->toHtml(); ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter">
+    <div class="container-fluid">
+        <h2><span>Sign Up to</span> Our Newsletter</h2>
+        <p>Get hooked on. Be the first to know about our latest collections and offers.</p>
+        <div class="row">
+            <?php echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe.phtml')->toHtml(); ?>
+            
+        </div>
+    </div>
+</div>

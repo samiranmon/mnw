@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<config>
+    
+    <modules>
+        <Brainium_Store>
+            <version>0.1.0</version>
+        </Brainium_Store>
+    </modules>
+    
+    <frontend>
+        <routers>
+            <store>
+                <use>standard</use>
+                <args>
+                    <module>Brainium_Store</module>
+                    <frontName>store</frontName>
+                </args>
+            </store>
+        </routers>
+        <layout>
+            <updates>
+                <store>
+                    <file>store.xml</file>
+                </store>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <admin>
+        <routers>
+            <store>
+                <use>admin</use>
+                <args>
+                    <module>Brainium_Store</module>
+                    <frontName>store</frontName>
+                </args>
+            </store>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <menu>
+            <banner module="banner">
+                <title>Add</title>
+                <sort_order>71</sort_order>               
+                <children>
+                    <sub_menu1 translate="title" >
+                        <title>Manage Store</title>
+                        <sort_order>1</sort_order>
+                        <action>store/adminhtml_store</action>
+                    </sub_menu1>
+                </children>
+            </banner>
+        </menu>
+        
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <Brainium_Store>
+                            <title>Store Module</title>
+                            <sort_order>11</sort_order>
+                        </Brainium_Store>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <store>
+                    <file>store.xml</file>
+                </store>
+            </updates>
+        </layout>
+    </adminhtml> 
+              
+              
+    <global>
+        <models>
+            <store>
+                <class>Brainium_Store_Model</class>
+                <resourceModel>store_mysql4</resourceModel>
+            </store>
+            <store_mysql4>
+                <class>Brainium_Store_Model_Mysql4</class>
+                <entities>
+                    <store>
+                        <table>brainium_store</table>
+                    </store>
+                </entities>
+            </store_mysql4>
+        </models>
+        
+        <resources>
+            <store_setup>
+                <setup>
+                    <module>Brainium_Store</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </store_setup>
+            <store_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </store_write>
+            <store_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </store_read>
+        </resources>
+        <blocks>
+            <store>
+                <class>Brainium_Store_Block</class>
+            </store>
+        </blocks>
+        <helpers>
+            <store>
+                <class>Brainium_Store_Helper</class>
+            </store>
+        </helpers>
+    </global>
+    
+    
+</config>

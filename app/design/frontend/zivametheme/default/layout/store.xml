@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <store_index_index>
+        <reference name="content">
+            <block type="store/store" name="store" template="store/store.phtml" />
+        </reference>
+    </store_index_index>
+</layout> 

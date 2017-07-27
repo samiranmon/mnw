@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Brainium_Sizechart>
+            <version>1.0.3</version>
+        </Brainium_Sizechart>
+    </modules>
+    
+    <global>
+        <resources>
+            <sizechart_setup>
+                <setup>
+                    <module>Brainium_Sizechart</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </sizechart_setup>
+            
+            <sizechart_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </sizechart_write>
+            <sizechart_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </sizechart_read>
+            
+            
+        </resources>
+        <!--another nodes -->
+    </global>
+        
+    
+</config>

@@ -1,0 +1,56 @@
+
+
+======================10/05/2014=============================================================================================
+* The Magento1.9.0.1 CCAvenue MCPG Payment Modules has been developed for doing transaction on Magento site.
+	            *
+*															    *
+*   Magento Version:1.9.0.1	     CCAvenue Version:MCPG-1.0								    *
+*   															    *
+*   Module Version. bz-1.2.1 	     encryption version: 7								    *
+*				     customer mail only after successful payment, magento core has been changed 	    *
+=============================================================================================================================
+
+======================16/04/2014=============================================================================================
+* The Magento1.8.1.0 CCAvenue MCPG Payment Modules has been developed for doing transaction on Magento site.
+	            *
+*															    *
+*   Magento Version:1.8.1.0
+	     CCAvenue Version:MCPG-1.0								    *
+*   															    *
+*   Module Version. bz-1.1.2 	     encryption version: 7								    *
+=============================================================================================================================
+
+======================13/03/2014=============================================================================================
+* The Magento1.8.1.0 CCAvenue MCPG Payment Modules has been developed for doing transaction on Magento site.
+	            *
+*															    *
+*   Magento Version:1.8.1.0
+	     CCAvenue Version:MCPG-1.0								    *
+*   															    *
+*   Module Version. bz-1.1 	     Installation manaual was wrong, it is modified.					    *
+*				     Manual modified for IonCube							    *
+*				     Ready for PHP 5									    *
+=============================================================================================================================
+
+======================23/02/2014=============================================================================================
+* The Magento1.8.1.0 CCAvenue MCPG Payment Modules has been developed for doing transaction on Magento site.
+	            *
+*															    *
+*   Magento Version:1.8.1.0
+	     CCAvenue Version:MCPG-1.0								    *
+*   															    *
+*   Module Version. bz-1.1 	     Installation manaual was wrong, it is modified.					    *
+					encryption version is 8.2							    *
+=============================================================================================================================
+
+
+======================22/02/2014=============================================================================================
+* The Magento1.8.1.0 CCAvenue MCPG Payment Modules has been developed for doing transaction on Magento site.
+	            *
+*															    *
+*   Magento Version:1.8.1.0
+	     CCAvenue Version:MCPG-1.0								    *
+*   															    *
+*   Module Version. bz-1.0 	     As per the document It support INR currency only 					    *
+=============================================================================================================================
+

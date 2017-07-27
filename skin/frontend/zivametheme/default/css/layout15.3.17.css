@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	padding:0;
+	margin:0; 
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+ color: #747948;
+ text-decoration: none;
+}
+a:hover {
+ text-decoration: underline;
+ color: #747948;
+}
+a img {
+ border: 0;
+}
+h1, h1 a {
+ color: #260f02;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 28px;
+ font-weight: normal;
+ margin: 0;
+}
+h2, h2 a {
+ color: #260f02;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 26px;
+ font-weight: normal;
+ margin: 0;
+}
+h3, h3 a {
+ color: #260f02;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 22px;
+ font-weight: normal;
+ margin: 0;
+}
+h4, h4 a {
+ color: #767b49;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 20px;
+ font-weight: normal;
+ margin: 0;
+}
+h5, h5 a {
+ color: #212121;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 18px;
+ font-weight: normal;
+ margin: 0;
+}
+h6, h6 a {
+ color: #707445;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+ font-weight: normal;
+ margin: 0;
+}
+p, ul, ol {
+ color: #212121;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 14px;
+ font-weight: normal;
+ margin: 0;
+ line-height: 21px;
+}
+ hr {
+    background-color: #c3beb7;
+    border: 0 none;
+    height: 1px;
+    margin: 2px;
+}
+.top_border{
+	width:100%;
+	float:left;
+	margin:0;
+	padding:0;
+	background:url(../../PROJECT/mycustomwristband.com/html/images/top_b.jpg) repeat-x 0 0;
+	height:3px;
+}
+	 
+.header{
+    margin:0;
+    padding:0; 
+    float:left; 
+    width:100%;
+}

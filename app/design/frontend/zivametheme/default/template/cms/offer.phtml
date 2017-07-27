@@ -1,0 +1,38 @@
+
+<div class="offer_banner">
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('offer_banner')->toHtml(); ?> 
+</div>
+
+
+<div class="offer_section">
+    <div class="container">
+       <h2>Offer</h2>
+       <p>A curated collection of your favourites - M&W, Lovable, Triumph & more.</p>
+        <div class="row">
+           
+            
+            <?php
+                $_subcategory = Mage::getModel('catalog/category')->load(204);
+                $_subcategories = $_subcategory->getChildrenCategories();
+                if (count($_subcategories) > 0) {
+
+                    foreach ($_subcategories as $_subcategory) {
+                        $_thumb_name = Mage::getModel('catalog/category')->load($_subcategory->getId())->getImage();
+                        ?>
+                    <div class="col-sm-4">
+                        <div class="offer_box">
+                              <a href="<?php echo $_subcategory->getURL(); ?>">
+                                  <img src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' . $_thumb_name; ?>"/>
+                              </a>
+                        </div>
+                    </div>
+            <?php } } ?>
+            
+             
+            
+            
+            
+
+        </div>
+    </div>
+</div>

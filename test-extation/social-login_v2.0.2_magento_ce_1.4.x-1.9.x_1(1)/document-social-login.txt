@@ -1,0 +1,9 @@
+- Installation guide:  http://wiki.magecheckout.com/general/installation.html
+
+- User Guide: http://wiki.magecheckout.com/social-login/
+
+- FAQ: http://wiki.magecheckout.com/general/faq.html
+
+- License agreement: http://wiki.magecheckout.com/general/license.html
+
+- Recommendation: http://wiki.magecheckout.com/general/recommendation.html

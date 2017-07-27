@@ -1,0 +1,27 @@
+<?php $testimonials = $this->_getCollection(); ?>
+<?php $i = 0; ?>
+<?php if (count($testimonials) > 0): ?>
+    <?php foreach ($testimonials as $testimonial): ?>
+        <div class="item">
+            <div class="latest_scoop_box">
+                
+                <div class="latest_scoop_box_text">
+                    <h4><?php echo $testimonial->getTestimonialName(); ?></h4>
+                    <p><?php echo $testimonial->getTestimonialText(); ?></p>
+                    <?php if ($testimonial->getTestimonialCompany() != '') { ?>
+                        <span><?php echo $testimonial->getTestimonialCompany(); ?></span>
+                    <?php } ?>
+                    <div class="line"></div>
+                    <a href="<?php echo $testimonial->getTestimonialWebsite(); ?>">Check Out Our Bralettes <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                </div>
+
+                <div class="latest_scoop_box_img">
+                    <?php if ($testimonial->getTestimonialImg()): ?>
+                         <img alt="<?php echo $testimonial->getTestimonialName(); ?>" src="<?php echo $this->getResizedImage($testimonial->getTestimonialImg(), 120, 120); ?>" />
+                    <?php endif; ?>
+                </div>
+
+            </div>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>

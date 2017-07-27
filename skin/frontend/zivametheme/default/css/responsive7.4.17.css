@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+    body{
+        padding-top: 45px;
+    }
+    .logo_div{
+        width: 75px;
+    }
+    .browse{
+        display: none;
+    }
+    .shop{
+        font-size: 14px;
+        margin-right: 0;
+        margin-top: 7px;
+        padding: 5px 0 0 0;
+    }
+    .notification_section ul li a{
+        font-size: 14px;
+    }
+    .notification_section ul li{
+        margin-right: 6px;
+    }
+    .notification_section{
+        margin-top: 12px;
+    }
+    .page-header{
+        height: 45px;
+    }
+    
+    .category_add_img{
+        display: none;
+    }
+    .phone_details{
+        top: 36px;
+        padding: 20px 12px;
+    }
+    
+    .forgot_pass button{
+        position: relative;
+        top: 10px;
+    }
+    .have_account a.facebook{
+        padding: 6px 0;
+    }
+    .have_account a.google_plus{
+        padding: 6px 0;
+    }
+    
+    .say_hello h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .say_hello p{
+        font-size: 14px;
+    }
+    .say_hello_image_blog{
+        width: 100%;
+    }
+    .customNavigation span.glyphicon{
+        font-size: 20px;
+    }
+    .say_hello{
+        padding: 30px 0px;
+    }
+    .follow_my_curves h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .follow_my_curves p{
+        font-size: 14px;
+    }
+    .pink_bar{
+        display: none;
+    }
+    .summer_mood h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .summer_mood p{
+        font-size: 14px;
+       
+    }
+    .product_box h3{
+        font-size: 16px;
+    }
+    .summer_box{
+        background-image: none;
+    }
+    .fit_for_all h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .fit_for_all p{
+        font-size: 14px;
+    }
+    .trading_product h2{
+        font-size: 16px;
+    }
+    .video_play_b span.glyphicon{
+        font-size: 20px;
+    }
+    .trading_product{
+        padding-top: 0;
+    }
+    .latest_scoop h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .latest_scoop p{
+        font-size: 14px;
+    }
+    .latest_scoop_box_text{
+        width: 100%;
+        padding: 20px;
+    }
+    .latest_scoop_box_img{
+        width: 100%;
+        padding: 10px;
+    }
+    .newsletter h2{
+        font-size: 16px;
+        margin-bottom: 10;
+    }
+    .newsletter p{
+        font-size: 14px;
+    }
+    .trading_product_slider{
+        padding: 0;
+    }
+    .newsletter{
+        text-align: center;
+    }
+    .footer_blog{
+        margin-bottom: 15px;
+    }
+    .packing_details{
+        margin: 20px 0 0 0;
+        display: block;
+    }
+    .packing_details_box{
+        padding: 10px 85px;
+        display: block;
+        border-bottom: #d8d8d8 1px solid;
+        border-right: none;
+    }
+    .packing_details_box:last-child{
+        border-bottom: none;
+    }
+    .sequre_pay{
+        float: left;
+        text-align: center;
+    }
+    .payusing{
+        text-align: center;
+    }
+    .latest_scoop_slider .customNavigation .prev3{
+        margin-left: 0;
+    }
+    .latest_scoop_slider .customNavigation .next3{
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 405px) {
+
+.menu_box_open{
+        width: 100%;
+    }
+    .brand_des{
+        width: 100%;
+    }
+    .login_box_open{
+        width: 100%;
+    }
+    .register_box_open{
+        width: 100%;
+    }
+    .notification_box_open{
+        width: 100%;
+    }
+    .cart_box_open{
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .packing_details_box{
+        padding: 2px 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .packing_details_box{
+        padding: 2px 35px;
+    }
+    .latest_scoop_slider .customNavigation .next3{
+        margin-right: 0;
+    }
+    .latest_scoop_slider .customNavigation .prev3{
+        margin-left: 0;
+    }
+    .latest_scoop_box_text{
+        padding: 20px;
+    }
+    
+}
