@@ -77,7 +77,9 @@
                         
                         <?php 
                             if(!Mage::getSingleton('customer/session')->isLoggedIn()){ ?>
-                               <li id="login"><a href="javascript:void(0)"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li> 
+                               <li id="login"><a href="javascript:void(0)"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                               <span class="not_login"></span>
+                               </li> 
                         <?php }else{
                                 $customer = Mage::getSingleton('customer/session')->getCustomer();
                                 /* $customer->getPrefix();
@@ -95,10 +97,15 @@
                                             <li><a href="<?php echo $this->getUrl('customer/account/logout/'); ?>">Logout</a></li>
                                         </ul>
                                     </div>
+                                    <span class="not_login"></span>
                                 </li>
                         <?php } ?>
                         <li id="notification"><a href="javascript:void(0)"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
-                        <li id="cart"><a href="javascript:void(0)"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                        <li id="cart"><a href="javascript:void(0)"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                            <span class="cart_count">
+                                <?php  echo Mage::helper('checkout/cart')->getItemsCount(); ?>
+                            </span>
+                        </li>
                         
                     </ul>
                 </div>
